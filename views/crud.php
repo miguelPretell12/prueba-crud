@@ -37,7 +37,14 @@
                     <aside class="sidebar">
                         <div class="usuario">
                             <img src="img/usuario.svg" alt="">
-                            <p>Bienvenido: <span>Admin</span></p>
+                            <p>Bienvenido: <?php 
+                                use Model\User;
+                                $id = $_SESSION['idU'];
+                                $id = filter_var($id, FILTER_VALIDATE_INT);
+                                
+                                $usuario = User::find($id);
+                            ?>
+                            <span><?php echo $usuario->nombre.', '.$usuario->apellido; ?></span></p></p>
                         </div>
                         <div class="menu-admin">
                             <h2>Menú de Administracion</h2>

@@ -79,10 +79,14 @@ class User extends ActiveRecord {
     public function autenticar(){
         session_start();
 
-        //Llenar el arreglo de session
-        $_SESSION['usuario'] = $this->email;
-        $_SESSION['login'] = true;
+        $query = "SELECT * FROM ".self::$tabla." WHERE correo= '".$this->correo."' LIMIT 1";
 
+        $resultado = self::$db->query($query);
+        $persona = $resultado->fetch_object();
+        //Llenar el arreglo de session
+        $_SESSION['usuario'] = $this->correo;
+        $_SESSION['idU'] = $persona->id;
+        $_SESSION['login'] = true;
         header('location: /admin');
     }
 }
