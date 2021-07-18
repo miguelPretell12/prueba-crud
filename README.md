@@ -1,7 +1,7 @@
 ## Prueba de Entrevista
 
 ## Este es un crud basico de usuario 
-## esta hecho con bootstrap, html, css, js, datatables, MySQL Y PHP
+## esta hecho con bootstrap, html, css,sass, js, datatables, MySQL Y PHP
 ## hecha con la Arquitectura MVC 
 
 ## =======================
