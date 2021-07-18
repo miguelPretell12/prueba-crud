@@ -1,0 +1,21 @@
+{
+    "name": "miguel/prueba-1",
+    "description": "Prueba de Neon House lead",
+    "type":"project",
+    "authors": [
+        {
+            "name": "miguelPretell12",
+            "email": "71430564+miguelPretell12@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\":"./models",
+            "MVC\\":"./",
+            "Controllers\\":"./controllers"
+        }
+    }
+}
