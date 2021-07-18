@@ -1,6 +1,9 @@
 ## Prueba de Entrevista
 
 ## Este es un crud basico de usuario 
+
+## =======================
+## Ingrese con este correo y contraseña para ingresar
 ## correo : admin@gmail.com
 ## password : 123456
 
